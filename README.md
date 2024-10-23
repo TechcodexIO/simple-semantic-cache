@@ -73,7 +73,7 @@ Follow these instructions to set up and run the semantic cache implementation:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/semantic-cache.git
+   git clone https://github.com/TechcodexIO/simple-semantic-cache.git
    cd semantic-cache
    ```
 
