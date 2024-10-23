@@ -1,0 +1,89 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .small { font: italic 13px sans-serif; }
+    .heavy { font: bold 30px sans-serif; }
+    .caption { font: 14px sans-serif; }
+  </style>
+
+  <!-- Start -->
+  <rect x="300" y="10" width="200" height="40" rx="5" ry="5" fill="lightblue" stroke="black" />
+  <text x="400" y="35" text-anchor="middle" class="caption">Start</text>
+
+  <!-- Initialize Clients -->
+  <rect x="300" y="80" width="200" height="40" rx="5" ry="5" fill="lightgreen" stroke="black" />
+  <text x="400" y="105" text-anchor="middle" class="caption">Initialize OpenAI and Qdrant clients</text>
+  <line x1="400" y1="50" x2="400" y2="80" stroke="black" stroke-width="2" />
+
+  <!-- User Input Loop -->
+  <rect x="300" y="150" width="200" height="40" rx="5" ry="5" fill="lightyellow" stroke="black" />
+  <text x="400" y="175" text-anchor="middle" class="caption">User Input Loop</text>
+  <line x1="400" y1="120" x2="400" y2="150" stroke="black" stroke-width="2" />
+
+  <!-- User enters query -->
+  <rect x="300" y="220" width="200" height="40" rx="5" ry="5" fill="lightyellow" stroke="black" />
+  <text x="400" y="245" text-anchor="middle" class="caption">User enters query</text>
+  <line x1="400" y1="190" x2="400" y2="220" stroke="black" stroke-width="2" />
+
+  <!-- Is input 'quit'? -->
+  <polygon points="400,290 450,340 350,340" fill="lightpink" stroke="black" />
+  <text x="400" y="325" text-anchor="middle" class="caption">Is input 'quit'?</text>
+  <line x1="400" y1="260" x2="400" y2="290" stroke="black" stroke-width="2" />
+
+  <!-- End Program -->
+  <rect x="100" y="320" width="200" height="40" rx="5" ry="5" fill="lightcoral" stroke="black" />
+  <text x="200" y="345" text-anchor="middle" class="caption">End Program</text>
+  <line x1="350" y1="340" x2="200" y2="340" stroke="black" stroke-width="2" />
+  <text x="275" y="335" class="caption">Yes</text>
+
+  <!-- Is input 'clear cache'? -->
+  <polygon points="400,390 450,440 350,440" fill="lightpink" stroke="black" />
+  <text x="400" y="425" text-anchor="middle" class="caption">Is input 'clear cache'?</text>
+  <line x1="400" y1="340" x2="400" y2="390" stroke="black" stroke-width="2" />
+  <text x="410" y="365" class="caption">No</text>
+
+  <!-- Clear Cache -->
+  <rect x="100" y="420" width="200" height="40" rx="5" ry="5" fill="lightgreen" stroke="black" />
+  <text x="200" y="445" text-anchor="middle" class="caption">Clear Cache</text>
+  <line x1="350" y1="440" x2="200" y2="440" stroke="black" stroke-width="2" />
+  <text x="275" y="435" class="caption">Yes</text>
+
+  <!-- Check Cache for Response -->
+  <rect x="300" y="490" width="200" height="40" rx="5" ry="5" fill="lightblue" stroke="black" />
+  <text x="400" y="515" text-anchor="middle" class="caption">Check Cache for Response</text>
+  <line x1="400" y1="440" x2="400" y2="490" stroke="black" stroke-width="2" />
+  <text x="410" y="465" class="caption">No</text>
+
+  <!-- Is similar response in cache? -->
+  <polygon points="400,560 450,610 350,610" fill="lightpink" stroke="black" />
+  <text x="400" y="595" text-anchor="middle" class="caption">Is similar response in cache?</text>
+  <line x1="400" y1="530" x2="400" y2="560" stroke="black" stroke-width="2" />
+
+  <!-- Retrieve Cached Response -->
+  <rect x="100" y="590" width="200" height="40" rx="5" ry="5" fill="lightgreen" stroke="black" />
+  <text x="200" y="615" text-anchor="middle" class="caption">Retrieve Cached Response</text>
+  <line x1="350" y1="610" x2="200" y2="610" stroke="black" stroke-width="2" />
+  <text x="275" y="605" class="caption">Yes</text>
+
+  <!-- Generate OpenAI Response -->
+  <rect x="500" y="590" width="200" height="40" rx="5" ry="5" fill="lightyellow" stroke="black" />
+  <text x="600" y="615" text-anchor="middle" class="caption">Generate OpenAI Response</text>
+  <line x1="450" y1="610" x2="500" y2="610" stroke="black" stroke-width="2" />
+  <text x="475" y="605" class="caption">No</text>
+
+  <!-- Add Response to Cache -->
+  <rect x="500" y="660" width="200" height="40" rx="5" ry="5" fill="lightgreen" stroke="black" />
+  <text x="600" y="685" text-anchor="middle" class="caption">Add Response to Cache</text>
+  <line x1="600" y1="630" x2="600" y2="660" stroke="black" stroke-width="2" />
+
+  <!-- Display Response -->
+  <rect x="300" y="730" width="200" height="40" rx="5" ry="5" fill="lightyellow" stroke="black" />
+  <text x="400" y="755" text-anchor="middle" class="caption">Display Response</text>
+  <line x1="200" y1="630" x2="200" y2="750" stroke="black" stroke-width="2" />
+  <line x1="600" y1="700" x2="600" y2="750" stroke="black" stroke-width="2" />
+  <line x1="200" y1="750" x2="300" y2="750" stroke="black" stroke-width="2" />
+  <line x1="600" y1="750" x2="500" y2="750" stroke="black" stroke-width="2" />
+
+  <!-- Return to User Input Loop -->
+  <path d="M 400 770 L 400 800 L 100 800 L 100 170 L 300 170" fill="none" stroke="black" stroke-width="2" />
+  <text x="250" y="795" class="caption">Return to User Input Loop</text>
+</svg>
